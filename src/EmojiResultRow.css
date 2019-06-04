@@ -7,8 +7,9 @@
   cursor: pointer;
 }
 
-.favorite-button {
-    display: flex
+.row-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .component-emoji-result-row:hover {

@@ -26,11 +26,13 @@ class EmojiResultsRow extends PureComponent {
 
     return (
       <div
-        className="component-emoji-result-row copy-to-clipboard"
+        className="component-emoji-result-row copy-to-clipboard row-container"
         data-clipboard-text={this.props.symbol}
       >
-        <img alt={this.props.title} src={src} />
-        <span className="title">{this.props.title}</span>
+        <div>
+          <img alt={this.props.title} src={src} />
+          <span className="title">{this.props.title}</span>
+        </div>
         <span className="info">Click to copy emoji</span>
         <div className="favorite-button">{this.state.ifAdd
         ? <button onClick={this.removeFavorite} name={src}> unFav </button>
